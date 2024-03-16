@@ -1,0 +1,96 @@
+<p>Este es el ejercicio 2</p>
+
+<table class="table table-dark">
+  <thead>
+  <tr>
+    <th scope="col">Nombre</th>
+    <th scope="col">Descripcion</th>
+    <th scope="col">Tipo</th>
+    <th scope="col">Serial</th>
+    <th scope="col">Fecha</th>
+    <th scope="col">Peso</th>
+    <th scope="col">Alto</th>
+    <th scope="col">Ancho</th>
+    <th scope="col">Largo</th>
+    <th scope="col">Precio</th>
+    <th scope="col">Imagen</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td scope="row">{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+    <td>{{null}}</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+<!-- CALCULADORA -->
+
+<h1 class="text-center">CALCULADORA</h1>
+
+
+<div class="container d-block">
+  <div class="row justify-content-center text-center">
+    <div class="col-md-12">
+  <input type="text" class="tamañoR form-control" [(ngModel)]="expresion" readonly >
+<div class="btnsCalculadora">
+     <div class="btnNumbers">
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(0)">0</button>
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(1)">1</button>
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(2)">2</button>
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion('+')">+</button>
+
+    </div>
+    <div class="btnNumbers">
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(3)">3</button>
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(4)">4</button>
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(5)">5</button>
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion('-')">-</button>
+
+     </div>
+    <div class="btnNumbers">
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(6)">6</button>
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(7)">7</button>
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(8)">8</button>
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion('x')">x</button>
+    </div>
+    <div class="btnNumbers">
+          <button  class="btn botonC btn-outline-info" (click)="agregarNumero(9)">9</button>
+          <button  class="btn botonC btn-outline-dark" (click)="limpiar()">C</button>
+          <button  class="btn botonC btn-outline-dark" (click)="calcular()">=</button>
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion('÷')">÷</button>
+
+
+    </div>
+
+<div class="btnNumbers">
+
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion('(')">(</button>
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion(')')">)</button>
+          <button  class="btn botonC btn-secondary" (click)="agregarOperacion('^')">x²</button>
+          <button  class="btn botonC btn-outline-dark" (click)="borrarUnNumero()">🔙</button>
+  </div>
+</div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+<button routerLink = "/ejercicio1">Atras</button>
+
+
+
